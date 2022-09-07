@@ -1,9 +1,12 @@
+@import '_config';
+@import 'navbar';
+@import 'header';
+
 body {
-  background-color: blue;
+  background-color: $color1;
 }
 
-.container {
-  background-color: green;
-  height: 100px;
-  width: 200px;
+.headNav {
+  margin-top: 20vh;
+  margin-left: 5vw;
 }
