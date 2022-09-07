@@ -1,12 +1,16 @@
 @import '_config';
 @import 'navbar';
 @import 'header';
-
+html {
+  cursor: $cursor;
+}
 body {
+  
   background-color: $color1;
 }
 
 .headNav {
   margin-top: 20vh;
   margin-left: 5vw;
+  width: 200px;
 }

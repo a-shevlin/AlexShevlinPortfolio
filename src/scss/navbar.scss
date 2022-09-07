@@ -1,26 +1,20 @@
-.navbar {
-  height: 130px;
-  width: 70px;
-  transform: rotate(270deg);
+.navBar {
+  width: 200px;
 }
-
-
-.navBtn {
-  margin: 5px;
-}
-
 .navBtnClip {
   width: 50px;
-  height: 60px;
+  height: 40px;
+  margin: 5px;
   background-color: $color2;
-  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0, 50% 25%);
 }
 
 .navBtnClip:hover {
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-  background-color: $color3;
+  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+  cursor: $pointer;
 }
 
 .navBtnClip:active {
   background-color: $color5;
+  cursor: $cursor;
 }

@@ -6,6 +6,7 @@ import Projects from "./Projects.js";
 
 function App() {
   return (
+
     <React.Fragment>
       <div class="container">
         <div class="headNav">
@@ -16,6 +17,7 @@ function App() {
         {/* 
         <About />
         <Projects /> */}
+        <div class="cursor"></div>
       </div>
     </React.Fragment>
   );
