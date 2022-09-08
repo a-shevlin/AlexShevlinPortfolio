@@ -4,13 +4,14 @@
 html {
   cursor: $cursor;
 }
+
 body {
-  
+  user-select: none;
   background-color: $color1;
 }
 
 .headNav {
   margin-top: 20vh;
   margin-left: 5vw;
-  width: 200px;
+  width: fit-content;
 }

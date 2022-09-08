@@ -1,5 +1,5 @@
 .navBar {
-  width: 200px;
+  width: fit-content;
 }
 .navBtnClip {
   width: 50px;
@@ -9,12 +9,46 @@
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0, 50% 25%);
 }
 
+.navBtnClip.project {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.navBtnClip.about {
+  position: absolute;
+  top: 0px;
+  left: 60px;
+}
+
 .navBtnClip:hover {
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
-  cursor: $pointer;
+  cursor: $pointer2;
 }
 
 .navBtnClip:active {
-  background-color: $color5;
+  background-color: $color3;
   cursor: $cursor;
+}
+
+.navBtnClip.activeProject {
+  z-index: 5;
+  width: max-content;
+  height: max-content;
+  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 1%);
+}
+
+.navBtnClip.activeProject:hover {
+  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 0);
+}
+
+.navBtnClip.activeAbout {
+  z-index: 5;
+  width: max-content;
+  height: max-content;
+  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 1%);
+}
+
+.navBtnClip.activeAbout:hover {
+  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 0);
 }
