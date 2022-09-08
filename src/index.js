@@ -12,4 +12,8 @@ root.render(
   </React.StrictMode>
 );
 
+const about = document.getElementsByClassName('.about');
+const project = document.getElementsByClassName('.project');
+const activeProject = document.getElementsByClassName('');
+
 reportWebVitals();

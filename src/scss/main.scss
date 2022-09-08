@@ -11,7 +11,11 @@ body {
 }
 
 .headNav {
-  margin-top: 20vh;
-  margin-left: 5vw;
+  position: absolute;
+  top: 15vh;
+  left: 20vw;
+  justify-content: center;
   width: fit-content;
+  margin: 0 auto;
+
 }

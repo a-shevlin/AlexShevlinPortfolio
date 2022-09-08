@@ -6,24 +6,75 @@
   height: 40px;
   margin: 5px;
   background-color: $color2;
+  text-align: center;
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0, 50% 25%);
+  transition: background-color .2s, clip-path .2s, width .2s, height .2s;
+
+  hr {
+    background-color: $color1;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+  }
+
+  h1 {
+    font-family: 'Bungee', cursive;
+    
+    margin-top: 10px;
+  }
+
+  h1:hover {
+    color: $color4;
+    cursor: $cursor;
+  }
+
 }
 
 .navBtnClip.project {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 80px;
+  transition: margin-left .5s;
+
+  h5 {
+    margin: 2px;
+  }
+
+  p {
+    font-size: 10pt;
+    margin-bottom: 4px;
+  }
+
+  img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .slag {
+    filter: brightness(60%) hue-rotate(9deg) grayscale(60%);
+    margin: 3px;
+  }
+
+  .gameLink {
+    filter: brightness(60%) hue-rotate(9deg) grayscale(60%);
+    margin: 3px;
+  }
 }
+
 
 .navBtnClip.about {
   position: absolute;
   top: 0px;
-  left: 60px;
+  margin-left: 145px;
+  transition: margin-left .5s;
 }
 
 .navBtnClip:hover {
-  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0, 50% 0%);
+  background-color: $color3;
   cursor: $pointer2;
+  transition: background-color .2s, clip-path .2s;
 }
 
 .navBtnClip:active {
@@ -31,24 +82,70 @@
   cursor: $cursor;
 }
 
+.activeProject h1{
+  top: 10vh;
+  left: 10vw;
+}
+
 .navBtnClip.activeProject {
-  z-index: 5;
-  width: max-content;
-  height: max-content;
-  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 1%);
+  z-index: 2;
+  width: 60vw;
+  height: 60vh;
+  margin-left: -80px;
+  clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0, 50% 0%);
+  transition: width .2s, height .2s, background-color .2s, margin-left .5s;
 }
 
 .navBtnClip.activeProject:hover {
-  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 0);
+  clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0, 50% 0%);
+  background-color: $color2;
+  transition: width .2s, height .2s, background-color .2s;
+
 }
 
 .navBtnClip.activeAbout {
-  z-index: 5;
-  width: max-content;
-  height: max-content;
-  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 1%);
+  z-index: 2;
+  width: 60vw;
+  height: 60vh;
+  margin-left: 0px;
+  clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0, 50% 0%);
 }
 
 .navBtnClip.activeAbout:hover {
-  clip-path: polygon(27% 0%, 27% 3%, 100% 3%, 100% 95%, 50% 100%, 0 95%, 0% 0%, 13% 0);
+  background-color: $color2;
+  clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0, 50% 0%);
+  transition: width .2s, height .2s, background-color .2s;
 }
+
+a {
+  color: $color2;
+  transition: color .2s;
+}
+
+a:hover {
+  color: $color3;
+  transition: color .2s;
+  cursor: $cursor;
+}
+
+.github {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+
+.linkedin {
+  position: absolute;
+  left: 55px;
+  top: 10px;
+  img {
+    width: 20px;
+    transition: filter .2s;
+  }
+  img:hover {
+    filter: brightness(60%) hue-rotate(9deg) contrast(110%);
+    transition: filter .2s;
+  }
+}
+
+

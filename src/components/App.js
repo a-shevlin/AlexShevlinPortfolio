@@ -16,7 +16,6 @@ function App() {
         {/* 
         <About />
         <Projects /> */}
-        <div class="cursor"></div>
       </div>
     </React.Fragment>
   );
