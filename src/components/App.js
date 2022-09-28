@@ -6,8 +6,8 @@ function App() {
   return (
 
     <React.Fragment>
-      <div class="container">
-        <div class="headNav">
+      <div className="container">
+        <div className="headNav">
           <Header />
           <NavBar>
           </NavBar>
