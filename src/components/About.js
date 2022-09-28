@@ -9,30 +9,38 @@ function About(props) {
     <React.Fragment>
       <div className={`navBtnClip about ${open ? "activeAbout": ""}`}onClick={() => setOpen(!open)}>
         {open === false ? (
-          <div></div>
+          <div className="aboutClosed">A</div>
         ) : (
           <div className="aboutCard">
             <h1>About Me</h1>
             
             <hr />
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-6">
                 <div>
                   <h6>Web and Mobile Development</h6>
+                  <hr />
                   <p>60+ Projects using C#, JS, React, Python, CSS, and SASS</p>
                   <h6>Project Management</h6>
+                  <hr />
                   <p>Visualized projects from concept to production and worked closely with other teams to achieve goals together. </p>
                   <h6>Marketing Management</h6>
+                  <hr />
                   <p>Improved audio and video editing techniques by creating a baseline standard and organized projects with Notion and Trello to increase productivity and create consistent timelines.</p>
                   <h6>Restaurant Management</h6>
+                  <hr />
                   <p>Worked alongside Marketing and Operations Leads to create and test new products and trained 200+ employees across 3 locations to meet and exceed company standards.</p>
                 </div>
                 <hr />
               </div>
               <div className="col-md">
-                <img src={alex} alt="Image of Alex"/>
-                <h5>Full Stack Developer</h5>
-                <h6>Please contact me here:</h6>
+                <div className="contact">
+                  <img src={alex} alt="Image of Alex"/>
+                  {/* <h5>Insert contact here links</h5> */}
+                </div>
+                <div className="blurb">
+                <p>Hello, I'm Alex! I am a self taught Full Stack Developer. My previous work experience is in Marketing and Restaurant Management. Building up skills to succeed in both of these fields has allowed me to become an adaptive problem solver. I love expanding on existing skills and applying new concepts to everyday life.</p>
+                </div>
               </div>
             </div>
           </div>
