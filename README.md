@@ -15,7 +15,7 @@
 * CSS
 * Firebase
 ---
-## Desc
+## Description
 
 My portfolio [alexshevlin.dev](https://alexshevlin.dev), also accessible at [ads.pizza](ads.pizza), featuring some of my completed GitHub projects to organize links to both the live sites and repositories. Includes an about me which will in the future allow a user to download my resume.
 
@@ -28,4 +28,4 @@ No bugs so far. If you find any feel free to let me know!
 
 ## Contact
 
-[Alex Shevlin](mailto:alex@alexshevlin.dev)
+[Alex Shevlin](mailto:)
