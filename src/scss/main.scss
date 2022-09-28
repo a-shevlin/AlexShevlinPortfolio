@@ -2,21 +2,27 @@
 @import 'navbar';
 @import 'about';
 @import 'header';
+
 html {
   cursor: $cursor;
 }
 
 body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
   user-select: none;
   background-color: $color1;
 }
 
 .headNav {
   position: absolute;
-  top: 15vh;
+  top: 10vh;
   left: 20vw;
   justify-content: center;
   width: fit-content;
   margin: 0 auto;
-
+  @media screen and (max-width: $phWidth) {
+    top: 8vh;
+  }
 }
