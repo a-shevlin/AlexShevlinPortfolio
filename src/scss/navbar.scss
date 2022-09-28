@@ -19,8 +19,13 @@
 
   h1 {
     font-family: 'Bungee', cursive;
-    
+    width: fit-content;
+    margin: auto;
     margin-top: 10px;
+    @media screen and (max-width: $phWidth) {
+      font-size: 18pt;
+    }
+
   }
 
   h1:hover {
@@ -32,12 +37,23 @@
 
 .navBtnClip.project {
   position: absolute;
+  overflow-y: auto;
   top: 0px;
   left: 80px;
+  padding-bottom: 10px;;
   transition: margin-left .5s;
+
+  .proj-card {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 
   h5 {
     margin: 2px;
+    font-size: 18pt;
+    @media screen and (max-width: $phWidth) {
+      font-size: 12pt;
+    }
   }
 
   p {
@@ -49,16 +65,21 @@
     width: 50%;
     display: block;
     margin: 0 auto;
+    @media screen and (max-width: $phWidth) {
+      width: 70%;
+    }
   }
 
-  .slag {
+  .ghLogo {
     filter: brightness(60%) hue-rotate(9deg) grayscale(60%);
     margin: 3px;
+    cursor: $pointer;
   }
 
   .gameLink {
     filter: brightness(60%) hue-rotate(9deg) grayscale(60%);
     margin: 3px;
+    cursor: $pointer;
   }
 }
 
@@ -84,7 +105,6 @@
 
 .activeProject h1{
   top: 10vh;
-  left: 10vw;
 }
 
 .navBtnClip.activeProject {
