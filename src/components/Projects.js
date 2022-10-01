@@ -76,7 +76,6 @@ function Projects(props) {
                     <a href={host} target="_blank" rel="noreferrer" className="gameLink">
                       <FontAwesomeIcon icon={faGamepad} />
                     </a>
-                    <hr />
                   </div>
                 )
               })

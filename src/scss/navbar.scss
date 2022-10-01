@@ -38,7 +38,6 @@
 
 .navBtnClip.project {
   position: absolute;
-  
   top: 0px;
   left: 80px;
   padding: 10px;;
@@ -50,14 +49,22 @@
 
   .projOpen {
     overflow-y: auto;
+    padding: 2%;
   }
   .proj-card {
+    margin: auto;
+    width: 98%;
     margin-top: 10px;
     margin-bottom: 20px;
+    background-color: $color3;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px $color1;
   }
 
   h5 {
     margin: 2px;
+    margin-top: 10px;
     font-size: 18pt;
     @media screen and (max-width: $phWidth) {
       font-size: 12pt;
@@ -70,13 +77,14 @@
   }
 
   img {
-    width: 50%;
+    width: 70%;
     display: block;
     margin: 0 auto;
     border-radius: 20px;
     box-shadow: 1px 1px 3px $color1;
+    box-shadow: 1px 1px 5px $color1;
     @media screen and (max-width: $phWidth) {
-      width: 70%;
+      width: 90%;
     }
   }
 
@@ -121,10 +129,14 @@
   overflow-y: auto;
   z-index: 2;
   width: 60vw;
-  height: 60vh;
+  height: 65vh;
   margin-left: -80px;
   clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0, 50% 0%);
   transition: width .2s, height .2s, background-color .2s, margin-left .5s;
+  @media screen and (max-width: 500px) {
+    width:80vw;
+    margin-left:-115px;
+  }
 }
 
 .navBtnClip.activeProject:hover {
@@ -137,9 +149,14 @@
 .navBtnClip.activeAbout {
   z-index: 2;
   width: 60vw;
-  height: 60vh;
+  height: 65vh;
   margin-left: 0px;
   clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0, 50% 0%);
+  @media screen and (max-width: 500px) {
+    width:80vw;
+    height: 65vh;
+    margin-left: -40px;
+  }
 }
 
 .navBtnClip.activeAbout:hover {
