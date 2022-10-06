@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faGamepad } from '@fortawesome/free-solid-svg-icons';
 import slag from '../img/slag.png'
 import reddit from '../img/reddit.png'
-import pigdice from '../img/pigdice.png'
+import gpp from '../img/game-product-page.png'
+import clicker from '../img/pov_1.png'
 import wip from '../img/wip.png'
 
 const data = [
@@ -25,19 +26,19 @@ const data = [
   },
   {
     id: 3,
-    img: wip,
+    img: clicker,
     title: "WIP Doughnut Clicker",
     lang: "Python",
     github: "https://github.com/a-shevlin/doughnut-clicker",
-    host: "https://github.com/a-shevlin/doughnut-clicker",
+    host: "https://doughnut-clicker.web.app/",
   },
   {
     id: 4,
-    img: pigdice,
-    title: "Pig Dice",
-    lang: "JavaScript, CSS, HTML",
-    github: "https://github.com/a-shevlin/pig-dice",
-    host: "https://a-shevlin.github.io/pig-dice/",
+    img: gpp,
+    title: "Game Product Page",
+    lang: "React, Tailwind, Firebase",
+    github: "https://github.com/a-shevlin/doughnut-react",
+    host: "https://doughnut-clicker.web.app/",
   },
   // {
   //   id: 5,
