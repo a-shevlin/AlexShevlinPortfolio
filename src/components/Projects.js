@@ -10,6 +10,22 @@ import wip from '../img/wip.png'
 const data = [
   {
     id: 1,
+    img: gpp,
+    title: "Game Product Page",
+    lang: "React, Tailwind, Firebase",
+    github: "https://github.com/a-shevlin/doughnut-react",
+    host: "https://doughnut-clicker.web.app/",
+  },
+  {
+    id: 2,
+    img: clicker,
+    title: "Doughnut Clicker alpha-v1.0",
+    lang: "Python",
+    github: "https://github.com/a-shevlin/doughnut-clicker",
+    host: "https://doughnut-clicker.web.app/",
+  },
+  {
+    id: 3,
     img: reddit,
     title: "React Reddit Clone",
     lang: "JavaScript, React, CSS, HTML",
@@ -17,29 +33,14 @@ const data = [
     host: "https://github.com/a-shevlin/reddit-clone",
   },
   {
-    id: 2,
+    id: 4,
     img: slag,
     title: "S.L.A.G. Game",
     lang: "C#, MVC, CSS, Razor",
     github: "https://github.com/a-shevlin/slagclient",
     host: "https://slaggame.azurewebsites.net/",
   },
-  {
-    id: 3,
-    img: clicker,
-    title: "WIP Doughnut Clicker",
-    lang: "Python",
-    github: "https://github.com/a-shevlin/doughnut-clicker",
-    host: "https://doughnut-clicker.web.app/",
-  },
-  {
-    id: 4,
-    img: gpp,
-    title: "Game Product Page",
-    lang: "React, Tailwind, Firebase",
-    github: "https://github.com/a-shevlin/doughnut-react",
-    host: "https://doughnut-clicker.web.app/",
-  },
+
   // {
   //   id: 5,
   //   img: slag,
